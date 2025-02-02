@@ -25,7 +25,7 @@ function App() {
     if (isOwner) {
       setLoading(true);
       setError(null);
-      axios.get('https://6006-136-232-36-98.ngrok-free.app/analyze/reports')
+      axios.get('http://localhost:8503/analyze/reports')
         .then((response) => {
           // The response now includes analysis results
           setReports(response.data);
